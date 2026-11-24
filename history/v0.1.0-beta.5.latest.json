@@ -1,0 +1,11 @@
+{
+  "version": "0.1.0-beta.5",
+  "notes": "新版加强了升级保护与稳定性，并精简了非 macOS 冗余代码与文档结构。\n\n- 更新前自动备份：通过客户端内更新替换应用前，自动备份个人配置、词典、整理规则与历史记录（最多保留 5 份；不含凭据与录音）。\n- 启动安全模式：如连续发生启动异常，可进入安全模式查看脱敏崩溃信息、恢复配置或重置后再启动。\n- 文字整理与界面细节：内置专业术语改为按需检索以降低 Prompt 冗余；统一桌面侧边栏导航与深浅色主题样式令牌。\n- 升级方式：使用 beta.4 的用户可在客户端弹出更新提示后直接点击「更新并重启」（或在「设置 → 软件更新」手动检查）；beta.3 及更早版本请下载 DMG 拖入“应用程序”手动覆盖一次。\n- 适用于 macOS 14 或以上版本的 Apple Silicon Mac。此测试版使用开发签名，尚未获得 Apple 公证，升级后 macOS 可能要求重新确认权限。\n- 同一发布页提供对应版本的源码快照与许可证。",
+  "pub_date": "2026-11-23T08:31:17.151Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "url": "https://github.com/2023liushuya-lab/speak-more-downloads/releases/download/v0.1.0-beta.5/SpeakMore-macOS-arm64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRdnBFK1NXYVlOeHRJdHhFeUlabXlWU3pma3lEUzR5aDlFSmpiVGlMRTkvN2xmOFFVRXk5cnc3dkpvQnFRTDJEaGRqUnlOSHpSN1p4MTRWN2RDend1VThxb1lRLzdscWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDIyNjc1CWZpbGU6U3BlYWtNb3JlLW1hY09TLWFybTY0LmFwcC50YXIuZ3oJdmVyc2lvbjowLjEuMC1iZXRhLjUKdi9VVUcybkJOenZTOUxaMmxZNXVLRndNZkN4SGtUSHo3YjJySUVmbmdZdzBhampKc3RWUlB2b1FvK0FEcXdVcXo5N2ZsVUZUVHhtOXZuVmNIUDNwQ3c9PQo="
+    }
+  }
+}

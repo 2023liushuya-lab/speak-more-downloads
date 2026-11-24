@@ -1,11 +1,11 @@
 {
-  "version": "0.1.0-beta.5",
-  "notes": "新版加强了升级保护与稳定性，并精简了非 macOS 冗余代码与文档结构。\n\n- 更新前自动备份：通过客户端内更新替换应用前，自动备份个人配置、词典、整理规则与历史记录（最多保留 5 份；不含凭据与录音）。\n- 启动安全模式：如连续发生启动异常，可进入安全模式查看脱敏崩溃信息、恢复配置或重置后再启动。\n- 文字整理与界面细节：内置专业术语改为按需检索以降低 Prompt 冗余；统一桌面侧边栏导航与深浅色主题样式令牌。\n- 升级方式：使用 beta.4 的用户可在客户端弹出更新提示后直接点击「更新并重启」（或在「设置 → 软件更新」手动检查）；beta.3 及更早版本请下载 DMG 拖入“应用程序”手动覆盖一次。\n- 适用于 macOS 14 或以上版本的 Apple Silicon Mac。此测试版使用开发签名，尚未获得 Apple 公证，升级后 macOS 可能要求重新确认权限。\n- 同一发布页提供对应版本的源码快照与许可证。",
-  "pub_date": "2026-11-23T08:31:17.151Z",
+  "version": "0.1.0-beta.6",
+  "notes": "v0.1.0-beta.6 全面升级了 macOS 客户端桌面视觉与交互体验，转向更简洁克制的黑白灰单色体系，并精简了历史记录、词典与设置页的文案和布局。\n\n### 首次安装提示（未公证内测版）\n\n当前测试版使用开发签名、尚未通过 Apple 公证。首次打开若弹出 **“Apple 无法验证‘Speak More’”**：\n\n1. 在弹窗中点 **「完成」**（**切勿点蓝色的「移到废纸篓」**）。\n2. 打开 **系统设置 → 隐私与安全性**，滑到底部找到 Speak More 阻止提示。\n3. 点击 **「仍要打开」** 并输入开机密码或指纹。\n\n把 `Speak More.app` 拖入「应用程序」后，也可执行以下命令仅对该应用移除隔离标记：\n\n```sh\nxattr -dr com.apple.quarantine \"/Applications/Speak More.app\"\n```\n\n### 更新内容\n\n- **单色黑白灰视觉升级**：移除主界面与侧栏的黑蓝配色冲突，统一浅色与深色双主题下的中性表面、石墨黑 / 柔白胶囊主按钮与高对比度文字规范。\n- **历史记录更简洁**：按天分组展示记录，去除重复日期与冗余的「已尝试插入」提示；平时隐藏操作按钮，鼠标悬停行时浮现「复制」并支持原地「已复制 ✓」反馈。\n- **词典网格与微交互**：保留顶部紧凑单行输入框，词条改为 3 列轻卡片网格，悬停卡片浮现编辑 / 删除操作；将导入、导出与下载模板收纳进标题旁的 `⋯` 菜单。\n- **设置页卡片化与去噪**：所有设置分组统一为圆角描边卡片与右对齐控件列，归拢开关与操作按钮；已授权权限静默显示为可点击的绿色「已授权 ✓」，默认折叠 GitHub 私有仓库同步，并精简各处说明与冗余入口。\n\n### 升级与兼容说明\n\n- **升级方式**：已安装 `beta.4` / `beta.5` 的用户可在客户端弹出更新提示后直接点击「更新并重启」（或在「设置 → 软件更新」手动检查）；更早版本请下载 DMG 拖入“应用程序”手动覆盖一次。\n- **系统要求**：适用于 macOS 14 或以上版本的 Apple Silicon Mac。此测试版使用开发签名，尚未获得 Apple 公证，升级后 macOS 可能要求重新确认麦克风 / 辅助功能权限。\n- **源码与许可**：同一发布页提供对应版本的源码快照与许可证。",
+  "pub_date": "2026-11-24T05:45:43.393Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/2023liushuya-lab/speak-more-downloads/releases/download/v0.1.0-beta.5/SpeakMore-macOS-arm64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRdnBFK1NXYVlOeHRJdHhFeUlabXlWU3pma3lEUzR5aDlFSmpiVGlMRTkvN2xmOFFVRXk5cnc3dkpvQnFRTDJEaGRqUnlOSHpSN1p4MTRWN2RDend1VThxb1lRLzdscWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDIyNjc1CWZpbGU6U3BlYWtNb3JlLW1hY09TLWFybTY0LmFwcC50YXIuZ3oJdmVyc2lvbjowLjEuMC1iZXRhLjUKdi9VVUcybkJOenZTOUxaMmxZNXVLRndNZkN4SGtUSHo3YjJySUVmbmdZdzBhampKc3RWUlB2b1FvK0FEcXdVcXo5N2ZsVUZUVHhtOXZuVmNIUDNwQ3c9PQo="
+      "url": "https://github.com/2023liushuya-lab/speak-more-downloads/releases/download/v0.1.0-beta.6/SpeakMore-macOS-arm64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRdnBFK1NXYVlOeGc2bUNZV1lIRVpjV0d5eUFQMElWREhsVThmcnVMaS9RekdjNDFYY05LY2NKNTZ5Wmo5SHlnVTdFQS83RlFZeEZPNE5mUVVWNEJnRVVxRzFXbzB1R2c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDk5MTQxCWZpbGU6U3BlYWtNb3JlLW1hY09TLWFybTY0LmFwcC50YXIuZ3oJdmVyc2lvbjowLjEuMC1iZXRhLjYKK01mSXgrTWtkMWd4c3FKNjdhT2dRcVhIb3hJeDQweStKSk9BMGxOVUpQTWJJUUhpV3c1blFsMk1BWEtoMy9wNlMrWEo3enFjZ2JjSUl1Y1FvTlg2Q3c9PQo="
     }
   }
 }
